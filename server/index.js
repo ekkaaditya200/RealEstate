@@ -6,12 +6,21 @@ import userRouter from './routes/user.route.js';
 import authRouter from './routes/auth.route.js';
 import listingRouter from './routes/listing.route.js';
 import cookieParser from 'cookie-parser';
+import cors from 'cors'; 
 
 const app = express();
+<<<<<<< HEAD
 const port = process.env.PORT || 1005;
+=======
+const port = process.env.PORT||1005;
+>>>>>>> ec152c1667c341fc185858a0f4d6600c8317d5f2
 dotenv.config();
 app.use(express.json());
 app.use(cookieParser());
+app.use(cors({
+    origin: 'https://real-estate-frontend-eta.vercel.app/',
+    credentials: true
+}));
 
 app.listen(port, () => {
     console.log(`Server is running at port ${port}`)

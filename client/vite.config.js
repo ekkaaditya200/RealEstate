@@ -6,7 +6,7 @@ export default defineConfig({
   server:{
     proxy:{
       '/api':{
-        target:'http://localhost:1005',
+        target:'https://real-estate-backend-lime.vercel.app',
         secure:false,
       },
     },
