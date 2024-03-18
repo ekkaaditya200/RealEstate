@@ -5,8 +5,6 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   server:{
     proxy:{
-      '/api':{
-        target:'https://real-estate-backend-lime.vercel.app',
         secure:false,
       },
     },
