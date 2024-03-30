@@ -9,11 +9,7 @@ import cookieParser from 'cookie-parser';
 import cors from 'cors'; 
 
 const app = express();
-<<<<<<< HEAD
-const port = process.env.PORT || 1005;
-=======
 const port = process.env.PORT||1005;
->>>>>>> ec152c1667c341fc185858a0f4d6600c8317d5f2
 dotenv.config();
 app.use(express.json());
 app.use(cookieParser());

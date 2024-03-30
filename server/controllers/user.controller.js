@@ -45,7 +45,7 @@ export const getUserListing = async (req, res, next) => {
       const listing = await Listing.find({ userRef: req.params.id });
       res.status(200).json(listing);
     } catch (error) {
-
+      return next(errorHandler(500,"Error in getting the listings for this user"));
     }
   } else {
     return next(errorHandler(400, "You can only view your own listing"))

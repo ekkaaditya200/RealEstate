@@ -82,12 +82,14 @@ const CreateListing = () => {
             );
         });
     };
+
     const handleRemoveImage = (index) => {
         setFormData({
             ...formData,
             imageUrls: formData.imageUrls.filter((_, i) => i !== index),
         });
     };
+    
     const handleChange = (e) => {
         if (e.target.id === 'sale' || e.target.id === 'rent') {
             setFormData({
