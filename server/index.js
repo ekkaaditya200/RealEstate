@@ -14,7 +14,7 @@ dotenv.config();
 app.use(express.json());
 app.use(cookieParser());
 app.use(cors({
-    origin: 'https://soft-bombolone-97539f.netlify.app',
+    origin: 'https://6607ae121ddf0166bdc4b14e--soft-bombolone-97539f.netlify.app',
     credentials: true
 }));
 
