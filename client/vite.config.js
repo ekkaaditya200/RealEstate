@@ -6,7 +6,7 @@ export default defineConfig({
   server:{
     proxy:{
       '/api':{
-        target:'https://real-estate-backend-lime.vercel.app',
+        target:'https://realestate-9jqb.onrender.com',
         secure:false,
       },
     },
