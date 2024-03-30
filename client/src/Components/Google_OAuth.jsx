@@ -11,7 +11,7 @@ const Google_OAuth = () => {
       const provider = new GoogleAuthProvider();
       const auth = getAuth(app)
       const result = await signInWithPopup(auth, provider);
-      const res = await fetch('/api/auth/google', {
+      const res = await fetch('https://realestate-9jqb.onrender.com/api/auth/google', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
