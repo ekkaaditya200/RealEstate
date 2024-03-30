@@ -14,7 +14,7 @@ dotenv.config();
 app.use(express.json());
 app.use(cookieParser());
 app.use(cors({
-    origin: 'https://real-estate-frontend-eta.vercel.app/',
+    origin: 'https://soft-bombolone-97539f.netlify.app',
     credentials: true
 }));
 
